@@ -168,17 +168,11 @@ ul {
 
 @media screen and (max-width: 800px) {
 
-    .here, .favorite-header, .favorite {
-        grid-template-columns: 390px;
-        max-width: 390px;
-        flex-wrap: wrap;
-    }
-
-    .weather-header {
-        grid-template-columns: 400px;
-        max-width: 400px;
+    .here, .favorite, .favorite-header {
+        grid-template-columns: calc(100vw - 20px);
+        max-width: 800px;
         min-width: 400px;
-        width: 100%;
+        width: calc(100vw - 20px);
         flex-wrap: wrap;
     }
 
@@ -187,7 +181,7 @@ ul {
     }
 
     .add-city_input {
-        width: 325px;
+        width: calc(100vw - 85px);
     }
 
     .btn_update_mobile {
