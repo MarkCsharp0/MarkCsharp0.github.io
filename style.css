@@ -168,16 +168,26 @@ ul {
 
 @media screen and (max-width: 800px) {
 
-    .here, .weather-header, .favorite-header, .favorite {
-        grid-template-columns: 1fr;
-        max-width: 760px;
+    .here, .favorite-header, .favorite {
+        grid-template-columns: 390px;
+        max-width: 390px;
+        flex-wrap: wrap;
+    }
+
+    .weather-header {
+        grid-template-columns: 400px;
+        max-width: 400px;
         min-width: 400px;
-        width:100%;
+        width: 100%;
         flex-wrap: wrap;
     }
 
     .btn_update_desktop {
         display: none;
+    }
+
+    .add-city_input {
+        width: 325px;
     }
 
     .btn_update_mobile {
